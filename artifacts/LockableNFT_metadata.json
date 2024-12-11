@@ -1013,11 +1013,11 @@
 			]
 		},
 		"LockableNFT.sol": {
-			"keccak256": "0x023a95c546a271bceaa2309e8c39150cad50e28edff8f79c84709004c05e186b",
+			"keccak256": "0xa4917341bbaf303a8b90a93e4f995692c91cde5552b7a12d6331a93b9422a8aa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e02c777766f96cc563b4387a9dcb0ee5ec91c589fdfb7096ada2c987c128e773",
-				"dweb:/ipfs/QmZ96LBmQQdGCAWwYAzrveYq9rZA8JGqKYijkb8rS7FcJU"
+				"bzz-raw://ea619c1c16e7c0fc685b6ce559ec02f2f1ce1a0d63f1499e390973f22643ca26",
+				"dweb:/ipfs/QmZVPyg4vhEM1WSPhQdVyPoSgnVS6pixdUB6WkLw9t881A"
 			]
 		}
 	},

@@ -24,10 +24,12 @@ contract LockableNFT is ERC721, Ownable, ReentrancyGuard {
         uint256 indexed tokenId,
         uint256 valueReleased
     );
+
     // set name and symbol of your nft contract here
-    constructor(
-        uint256 initialMintPrice
-    ) ERC721("LockableNFT", "LNFT") Ownable(msg.sender) {
+    constructor(uint256 initialMintPrice)
+        ERC721("LockableNFT", "LNFT")
+        Ownable(msg.sender)
+    {
         MINT_PRICE = initialMintPrice; // Set the initial mint price
     }
 
@@ -86,9 +88,11 @@ contract LockableNFT is ERC721, Ownable, ReentrancyGuard {
      * @dev View locked ETH for a specific NFT.
      * @param tokenId The ID of the NFT.
      */
-    function getLockedEthForNft(
-        uint256 tokenId
-    ) external view returns (uint256) {
+    function getLockedEthForNft(uint256 tokenId)
+        external
+        view
+        returns (uint256)
+    {
         return _lockedEth[tokenId];
     }
 
@@ -96,9 +100,11 @@ contract LockableNFT is ERC721, Ownable, ReentrancyGuard {
      * @dev View ID for a specific NFT Against Owner Address.
      * @param owner The ID of the NFT.
      */
-    function getMintedNftId(
-        address owner
-    ) external view returns (uint256[] memory) {
+    function getMintedNftId(address owner)
+        external
+        view
+        returns (uint256[] memory)
+    {
         return _mintedTokens[owner];
     }
 
@@ -129,9 +135,13 @@ contract LockableNFT is ERC721, Ownable, ReentrancyGuard {
     /**
      * @dev Override required for ERC721 and Ownable.
      */
-    function supportsInterface(
-        bytes4 interfaceId
-    ) public view virtual override(ERC721) returns (bool) {
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        virtual
+        override(ERC721)
+        returns (bool)
+    {
         return super.supportsInterface(interfaceId);
     }
 }
